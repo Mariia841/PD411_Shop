@@ -1,0 +1,452 @@
+[
+  {
+    "Name": "Процесори",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (Процесори)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (Процесори)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (Процесори)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (Процесори)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (Процесори)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  },
+  {
+    "Name": "Відеокарти",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (Відеокарти)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (Відеокарти)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (Відеокарти)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (Відеокарти)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (Відеокарти)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  },
+  {
+    "Name": "Оперативна памʼять",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (Оперативна памʼять)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (Оперативна памʼять)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (Оперативна памʼять)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (Оперативна памʼять)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (Оперативна памʼять)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  },
+  {
+    "Name": "Материнські плати",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (Материнські плати)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (Материнські плати)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (Материнські плати)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (Материнські плати)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (Материнські плати)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  },
+  {
+    "Name": "SSD",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (SSD)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (SSD)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (SSD)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (SSD)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (SSD)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  },
+  {
+    "Name": "HDD",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (HDD)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (HDD)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (HDD)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (HDD)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (HDD)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  },
+  {
+    "Name": "Блоки живлення",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (Блоки живлення)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (Блоки живлення)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (Блоки живлення)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (Блоки живлення)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (Блоки живлення)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  },
+  {
+    "Name": "Корпуси",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (Корпуси)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (Корпуси)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (Корпуси)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (Корпуси)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (Корпуси)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  },
+  {
+    "Name": "Кулери",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (Кулери)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (Кулери)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (Кулери)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (Кулери)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (Кулери)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  },
+  {
+    "Name": "Мережеві карти",
+    "Products": [
+      {
+        "Name": "Intel Core i5-13600K (Мережеві карти)",
+        "Description": "14‑ядерний процесор",
+        "Price": 320,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Intel_Core_i5_13600K.jpg",
+        "Amount": 10,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i7-14700K (Мережеві карти)",
+        "Description": "20‑ядерний процесор",
+        "Price": 420,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Intel_i7_14700K.jpg",
+        "Amount": 8,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 5 7600X (Мережеві карти)",
+        "Description": "6‑ядерний Zen4",
+        "Price": 280,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/7/72/Ryzen_7600X.jpg",
+        "Amount": 15,
+        "Color": "Silver"
+      },
+      {
+        "Name": "AMD Ryzen 7 7800X3D (Мережеві карти)",
+        "Description": "Ігровий CPU",
+        "Price": 450,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Ryzen_7800X3D.jpg",
+        "Amount": 7,
+        "Color": "Silver"
+      },
+      {
+        "Name": "Intel Core i9-14900K (Мережеві карти)",
+        "Description": "Флагман Intel",
+        "Price": 600,
+        "Image": "https://upload.wikimedia.org/wikipedia/commons/5/55/Intel_i9_14900K.jpg",
+        "Amount": 5,
+        "Color": "Silver"
+      }
+    ]
+  }
+]

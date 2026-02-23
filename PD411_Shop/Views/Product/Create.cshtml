@@ -1,0 +1,64 @@
+﻿@model CreateProductVM
+
+<h2 class="text-center">Додавання товару</h2>
+<div class="d-flex justify-content-center w-50 m-auto">
+    <form class="w-100 text-center bg-body-tertiary py-2 px-4"
+          method="post"
+          asp-controller="Product"
+          asp-action="Create"
+          enctype="multipart/form-data">
+        <div>
+            <label for="name" class="form-label mt-2">Назва</label>
+            <input type="text" class="form-control" id="name" name="name" asp-for="Name" />
+            <div class="text-start ms-2" style="min-height: 24px;">
+                <span class="text-danger" style="font-size: 12px;" asp-validation-for="Name"></span>
+            </div>
+        </div>
+        <div>
+            <label for="description" class="form-label mt-2">Опис</label>
+            <input type="text" class="form-control" id="description" name="description" asp-for="Description">
+            <div class="text-start ms-2" style="min-height: 24px;">
+                <span class="text-danger" style="font-size: 12px;" asp-validation-for="Description"></span>
+            </div>
+        </div>
+        <div>
+            <label for="price" class="form-label mt-2">Ціна</label>
+            <input min="0" value="@(Model != null ? Model.Price : 0)" type="number" class="form-control" id="price" name="price" asp-for="Price">
+            <div class="text-start ms-2" style="min-height: 24px;">
+                <span class="text-danger" style="font-size: 12px;" asp-validation-for="Price"></span>
+            </div>
+        </div>
+        <div>
+            <label for="amount" class="form-label mt-2">Кількість</label>
+            <input min="0" value="@(Model != null ? Model.Amount : 0)" type="number" class="form-control" id="amount" name="amount" asp-for="Amount">
+            <div class="text-start ms-2" style="min-height: 24px;">
+                <span class="text-danger" style="font-size: 12px;" asp-validation-for="Amount"></span>
+            </div>
+        </div>
+        <div>
+            <label for="color" class="form-label mt-2">Колір</label>
+            <input type="text" class="form-control" id="color" name="color" asp-for="Color">
+            <div class="text-start ms-2" style="min-height: 24px;">
+                <span class="text-danger" style="font-size: 12px;" asp-validation-for="Color"></span>
+            </div>
+        </div>
+        <div>
+            <label for="categoryId" class="form-label mt-2">Категорія</label>
+            <select class="form-select" asp-for="CategoryId" asp-items="@Model!.SelectCategories"></select>
+            <div class="text-start ms-2" style="min-height: 24px;">
+                <span class="text-danger" style="font-size: 12px;" asp-validation-for="CategoryId"></span>
+            </div>
+        </div>
+        <div>
+            <label for="image" class="form-label mt-2">Зображення</label>
+            <input accept="image/*" type="file" class="form-control" id="image" name="image" asp-for="Image">
+            <div class="text-start ms-2" style="min-height: 24px;">
+                <span class="text-danger" style="font-size: 12px;" asp-validation-for="Image"></span>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <input class="btn btn-success w-25" type="submit" value="Додати">
+            <a class="btn btn-dark w-25" asp-controller="Product" asp-action="Index">Назад</a>
+        </div>
+    </form>
+</div>

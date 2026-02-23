@@ -1,0 +1,74 @@
+﻿@model HomeVM
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="d-flex">
+    <aside class="flex-grow-0 p-5 border-end text-nowrap">
+        @foreach (var category in Model.Categories)
+        {
+            <a asp-action="Index" asp-route-category="@category.Id" class="d-block mb-2 side-link">
+                @category.Name
+            </a>
+        }
+    </aside>
+
+    <main class="flex-grow-1 px-5 pt-5">
+        <div class="row gap-2 mx-auto">
+            @foreach (var product in Model.Products)
+            {
+                <partial name="_ProductCard" model="@product" />
+            }
+        </div>
+        <div class="d-flex justify-content-center mt-5">
+            <nav aria-label="...">
+                <ul class="pagination">
+                    @if (Model.Pagination.Page != 1)
+                    {
+                        <li class="page-item">
+                            <a asp-action="Index" 
+                            asp-route-page="1" 
+                            asp-route-category="@Model.CategoryId"
+                            class="page-link"><i class="bi bi-chevron-double-left"></i></a>
+                        </li>
+                        <li class="page-item">
+                            <a 
+                                asp-action="Index" 
+                                asp-route-page="@(Model.Pagination.Page - 1)"
+                               asp-route-category="@Model.CategoryId"
+                                class="page-link"><i class="bi bi-chevron-left"></i></a>
+                        </li>
+                    }
+
+                    @for (int i = 1; i <= Model.Pagination.PageCount; i++)
+                    {
+                        <li class="page-item @(i == Model.Pagination.Page ? "active" : "")">
+                            <a class="page-link"
+                               asp-action="Index"
+                               asp-route-page="@i"
+                               asp-route-category="@Model.CategoryId">@i</a>
+                        </li>
+                    }
+
+                    @if (Model.Pagination.Page != Model.Pagination.PageCount)
+                    {
+                        <li class="page-item">
+                            <a 
+                                asp-action="Index" 
+                                asp-route-page="@(Model.Pagination.Page + 1)" 
+                                asp-route-category="@Model.CategoryId"
+                                class="page-link"><i class="bi bi-chevron-right"></i></a>
+                        </li>
+                        <li class="page-item">
+                            <a 
+                                asp-action="Index" 
+                                asp-route-page="@Model.Pagination.PageCount" 
+                                asp-route-category="@Model.CategoryId"
+                                class="page-link"><i class="bi bi-chevron-double-right"></i></a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        </div>
+    </main>
+</div>

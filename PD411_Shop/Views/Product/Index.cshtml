@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ProductModel>
+
+<div class="text-center container">
+    <table class="table table-striped align-middle">
+        <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Назва</th>
+                <th>Ціна</th>
+                <th>Колір</th>
+                <th>Категорія</th>
+                <th>Дата створення</th>
+                <th>Зображення</th>
+                <th>
+                    <a asp-action="Create" asp-controller="Product" style="color: white">
+                        <i class="bi bi-plus-circle-dotted"></i>
+                    </a>
+                </th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Id</td>
+                    <td>@product.Name</td>
+                    <td>@product.Price</td>
+                    <td>@product.Color</td>
+                    <td>@product.Category!.Name</td>
+                    <td>@product.CreatedDate.ToString("dd.MM.yyyy")</td>
+                    <td>
+                        @* ~  шлях до папки wwwroot *@
+                        <img class="image-scale" height="50" src="~/images/@(product.Image ?? "default.jpg")" alt="@product.Name">
+                    </td>
+                    <td>
+                        <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id">
+                            <i class="bi bi-trash-fill" style="color: red"></i>
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

@@ -52,3 +52,12 @@ body {
     background-color: mediumseagreen;
     border-radius: 50%;
 }
+.out-of-stock {
+    opacity: 0.6;
+    filter: grayscale(0.5); 
+    pointer-events: none; 
+}
+
+    .out-of-stock a {
+        pointer-events: auto;
+    }

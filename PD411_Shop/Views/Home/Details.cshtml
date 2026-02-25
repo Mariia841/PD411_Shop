@@ -1,0 +1,62 @@
+@model ProductModel
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container mt-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a asp-action="Index">Головна</a></li>
+            <li class="breadcrumb-item active">@Model.Category?.Name</li>
+        </ol>
+    </nav>
+
+    <div class="row shadow-sm p-4 bg-white rounded">
+        <div class="col-md-6 text-center border-end">
+            <img src="~/images/@(Model.Image ?? "default.jpg")" 
+                 class="img-fluid" 
+                 style="max-height: 500px; object-fit: contain;" 
+                 alt="@Model.Name">
+        </div>
+
+        <div class="col-md-6 ps-md-5">
+            <h1 class="display-5">@Model.Name</h1>
+            <p class="text-muted">Код товару: @Model.Id</p>
+            
+            <hr>
+
+            <div class="mb-4">
+                @if (Model.Amount > 0)
+                {
+                    <h2 class="text-success fw-bold">@Model.Price $</h2>
+                    <p class="text-success"><i class="bi bi-check-circle"></i> В наявності (@Model.Amount шт.)</p>
+                }
+                else
+                {
+                    <h2 class="text-muted fw-bold">Немає в наявності</h2>
+                    <p class="text-danger"><i class="bi bi-x-circle"></i> Товар закінчився</p>
+                }
+            </div>
+
+            <h5>Характеристики:</h5>
+            <ul class="list-group list-group-flush mb-4">
+                <li class="list-group-item"><strong>Категорія:</strong> @Model.Category?.Name</li>
+                <li class="list-group-item"><strong>Колір:</strong> @Model.Color</li>
+                <li class="list-group-item"><strong>Дата додавання:</strong> @Model.CreatedDate.ToShortDateString()</li>
+            </ul>
+
+            <h5>Опис:</h5>
+            <p class="lead">@(Model.Description ?? "Опис відсутній для цього товару.")</p>
+
+            <div class="mt-4">
+                @if (Model.Amount > 0)
+                {
+                    <a asp-controller="Cart" asp-action="Add" asp-route-id="@Model.Id" class="btn btn-primary btn-lg px-5">
+                        <i class="bi bi-cart-plus"></i> Купити
+                    </a>
+                }
+                <a asp-action="Index" class="btn btn-outline-secondary btn-lg ms-2">Назад</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,11 +1,11 @@
-﻿@inject IHttpContextAccessor ContextAccessor
+﻿@inj@using PD411_Shop.Services
+@inject IHttpContextAccessor ContextAccessor
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - PD411_Shop</title>
-    <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/icons/bootstrap-icons.min.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -26,7 +26,7 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Головна</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Конфіденційність</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">Категорії</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">Про нас</a>
@@ -39,30 +39,29 @@
                         }
                     </ul>
                     <div class="flex-grow-0 d-flex align-items-center">
-                        <a class="text-dark text-decoration-none" asp-action="Index" asp-controller="Cart">
-                            <i class="bi bi-cart4" style="font-size: 1.7em">
-                            </i>
-                            <span class="badge">
+                        <a class="text-dark text-decoration-none me-3" asp-action="Index" asp-controller="Cart">
+                            <i class="bi bi-cart4" style="font-size: 1.7em"></i>
+                            <span class="badge rounded-pill bg-danger">
                                 @CartService.ItemsCount(ContextAccessor.HttpContext!.Session)
                             </span>
                         </a>
-                        <partial name="_LoginPartial">
-                    </div>
+                        <partial name="_LoginPartial" /> </div>
                 </div>
             </div>
         </nav>
     </header>
-    <div>
-        <main role="main" class="pb-3">
+    
+    <div class="container-fluid"> <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container text-center">
             &copy; 2026 - PD411_Shop - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

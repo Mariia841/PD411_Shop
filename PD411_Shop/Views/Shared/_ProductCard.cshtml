@@ -1,0 +1,52 @@
+@inject IHttpContextAccessor ContextAccessor
+@model ProductModel
+
+@{
+    bool isOutOfStock = Model.Amount <= 0;
+}
+
+<div class="card col-3 @(isOutOfStock ? "out-of-stock" : "")" style="width: 18rem;">
+    <a asp-controller="Home" asp-action="Details" asp-route-id="@Model.Id" class="text-decoration-none text-dark">
+        <div class="position-relative">
+            <img height="300" width="250" style="object-fit: contain;" 
+                 class="card-img-top" 
+                 src="~/images/@(Model.Image ?? "default.jpg")" 
+                 alt="@Model.Name">
+            
+            @if (isOutOfStock)
+            {
+                <span class="badge bg-secondary position-absolute top-50 start-50 translate-middle">
+                    Немає в наявності
+                </span>
+            }
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">@Model.Name</h5>
+    </a>
+
+            <div class="d-flex justify-content-between align-items-center">
+                @if (isOutOfStock)
+                {
+                    <h5 class="text-muted">Немає в наявності</h5>
+                }
+                else
+                {
+                    <h4>$@Model.Price</h4>
+                    <div class="text-end">
+                        @if (CartService.IsInCart(ContextAccessor.HttpContext!.Session, Model.Id))
+                        {
+                            <a asp-controller="Cart" asp-action="Remove" asp-route-id="@Model.Id">
+                                <i class="bi bi-cart-check-fill text-success" style="font-size: 2em;"></i>
+                            </a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Cart" asp-action="Add" asp-route-id="@Model.Id">
+                                <i class="bi bi-cart text-success" style="font-size: 2em;"></i>
+                            </a>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+</div>
